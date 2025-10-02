@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tussilago font face declarations - Place your Tussilago font files in public/fonts/ */
+@font-face {
+  font-family: 'Tussilago';
+  src: url('/fonts/Tussilago-Regular.woff2') format('woff2'),
+       url('/fonts/Tussilago-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tussilago';
+  src: url('/fonts/Tussilago-Bold.woff2') format('woff2'),
+       url('/fonts/Tussilago-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #ffffff;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  body {
+    @apply font-roboto;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-tussilago;
+  }
+}
+
+/* Optional: small helpers for logos and images from the starter */
+.logo {
+  height: 6rem;
+}
+.logo.react {
+  filter: invert(1) hue-rotate(180deg) saturate(200%);
+}
+
