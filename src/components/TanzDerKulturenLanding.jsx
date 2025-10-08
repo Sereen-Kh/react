@@ -58,12 +58,32 @@ const TanzDerKulturenLanding = () => {
         </div>
       </section>
 
+
       {/* About Section */}
       <section id="about" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center text-brand-dark mb-12 font-tussilago">
             Das sind wir
           </h2>
+          
+          {/* Team Images */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="overflow-hidden rounded-2xl shadow-xl">
+              <img 
+                src="/images/team-photo-1.jpg" 
+                alt="Unser Team am Strand"
+                className="w-full h-96 object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl shadow-xl">
+              <img 
+                src="/images/team-photo-2.jpg" 
+                alt="Team Celebration"
+                className="w-full h-96 object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="bg-gradient-to-br from-brand-green-light to-brand-lime rounded-lg h-96 flex items-center justify-center">
